@@ -10,6 +10,7 @@ header, footer, nav, section {
 }
 
 
+
 /* Header
 -----------------*/
 
@@ -27,6 +28,14 @@ header {
     width: 1020px; 
     margin: auto; 
     min-height: 900px; 
+}
+
+ul.nav > li ul.dropdown-menu {
+    display: none !important; 
+}
+
+ul.nav > li:hover ul.dropdown-menu {
+    display: block !important; 
 }
 
 /* Styles for basic forms
