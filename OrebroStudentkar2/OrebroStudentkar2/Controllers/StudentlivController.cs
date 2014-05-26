@@ -20,7 +20,7 @@ namespace OrebroStudentkar1.Controllers
         {
             return View();
         }
-        public ActionResult Stuidemiljo()
+        public ActionResult Studiemiljo()
         {
             return View();
         }

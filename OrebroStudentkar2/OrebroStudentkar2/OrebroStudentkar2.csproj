@@ -267,7 +267,7 @@
     <Content Include="Views\Studentliv\HyraLokal.cshtml" />
     <Content Include="Views\Studentliv\Index.cshtml" />
     <Content Include="Views\Studentliv\Karhuset.cshtml" />
-    <Content Include="Views\Studentliv\Stuidemiljo.cshtml" />
+    <Content Include="Views\Studentliv\Studiemiljo.cshtml" />
     <Content Include="Views\Utbildning\Index.cshtml" />
     <Content Include="Views\Utbildning\VanligaFragor.cshtml" />
   </ItemGroup>
