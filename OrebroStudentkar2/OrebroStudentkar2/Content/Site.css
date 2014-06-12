@@ -8,6 +8,9 @@
 header, footer, nav, section {
     display: block;
 }
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Sabon' !important; 
+}
 
 
 
@@ -52,9 +55,12 @@ nav > ul > li > a {
     background-image: url(/Content/Bilder/Grafik/blimedlem.png);
 }
 
-#blimedlem:hover {
+/***
+    
+    #blimedlem:hover {
     background-image: url(/Content/Bilder/Grafik/blimedlemhover.png);
 }
+    */
 
 
 
