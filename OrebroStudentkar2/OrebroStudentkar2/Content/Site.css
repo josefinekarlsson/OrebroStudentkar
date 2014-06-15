@@ -1,9 +1,9 @@
-﻿body {
+﻿/*body {
     font-size: .85em;
     font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
     color: #232323;
     background-color: #fff;
-}
+}*/
 
 header, footer, nav, section {
     display: block;
@@ -18,15 +18,16 @@ h1, h2, h3, h4, h5, h6 {
 -----------------*/
 
 header {
+
+}
+#headerbackground {
     height: 220px; 
     width: 100%; 
     background-image: url(/Content/Bilder/Grafik/headerdel.gif);
     background-repeat: repeat-x;
+    position: absolute; 
 }
-#headerlogo {
-    max-width: 1020px; 
-    margin: auto; 
-}
+
 #site {
     width: 1020px; 
     margin: auto; 
@@ -48,6 +49,7 @@ nav > ul > li > a {
 }
 
 #blimedlem {
+display: block; 
     height: 190px; 
     width: 180px; 
     margin-top: 30px; 
