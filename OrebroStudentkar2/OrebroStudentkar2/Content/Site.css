@@ -1,24 +1,21 @@
-﻿/*body {
-    font-size: .85em;
-    font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
-    color: #232323;
-    background-color: #fff;
-}*/
+﻿* {
+    margin: 0; 
+    padding: 0; 
+    font-family: Helvetica; 
+    color: black; 
+}
 
 header, footer, nav, section {
     display: block;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Sabon' !important;
+    font-family: 'Sabon';
 }
 
-
-
-/* Header
------------------*/
-
 header {
+    width: 100%; 
+    height: 220px;
 }
 
 #headerbackground {
@@ -27,36 +24,11 @@ header {
     background-image: url(/Content/Bilder/Grafik/headerdel.gif);
     background-repeat: repeat-x;
     position: absolute;
+    z-index: -1;
 }
-
-footer {
-    width: 100%;
-    background: #43a838;
-    position: fixed;
-    bottom: 0;
+#headerpic {
+    float: left; 
 }
-
-/*#site {
-    width: 1020px;
-    margin: auto;
-    min-height: 900px;
-}*/
-
-ul.nav > li ul.dropdown-menu {
-    display: none !important;
-}
-
-ul.nav > li:hover ul.dropdown-menu {
-    display: block !important;
-}
-
-nav {
-    margin-bottom: 50px;
-}
-
-    nav > ul > li > a {
-        color: black !important;
-    }
 
 #blimedlem {
     display: block;
@@ -67,12 +39,92 @@ nav {
     background-image: url(/Content/Bilder/Grafik/blimedlem.png);
 }
 
-/***
-    
-    #blimedlem:hover {
-    background-image: url(/Content/Bilder/Grafik/blimedlemhover.png);
+footer {
+    width: 100%;
+    background: #43a838;
+    position: fixed;
+    bottom: 0;
+    padding: 15px; 
 }
-    */
+#footercontent {
+    width: 1020px;
+    margin: auto;
+    height: 65px; 
+}
+#postadress {
+    width: 260px; 
+    float: right;  
+}
+#kontaktuppgifter {
+    width: 260px; 
+    float: left;  
+}
+#kansliöppettider {
+    width: 260px; 
+    position: absolute; 
+    margin-left: 365px; 
+}
+
+#site {
+    width: 1020px;
+    margin: auto;
+}
+
+/*Navigering*/
+#navbackground {
+    position: absolute; 
+    margin-top: 270px; 
+    border-bottom: 1px solid black; 
+    width: 100%; 
+    z-index: -1;
+}
+.menyitem {
+    display: inline-block; 
+    padding: 15px; 
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px; 
+    border: 1px solid black; 
+}
+.menyitem:hover {
+    background-color: #D8D8D8; 
+}
+.active {
+    background-color: #B8B8B8; 
+    border-top: 1px solid black; 
+    border-left: 1px solid black; 
+    border-right: 1px solid black;  
+    border-bottom: 1px solid #B8B8B8; 
+}
+
+ul.nav > li ul.dropdown-menu {
+    display: none;
+}
+
+ul.nav > li:hover ul.dropdown-menu {
+    display: block;
+    position: absolute; 
+    list-style: none; 
+    background-color: transparent; 
+    padding-top: 20px; 
+}
+ul.nav > li:hover ul.dropdown-menu > li {
+    
+    background-color: white; 
+}
+ul.nav > li:hover ul.dropdown-menu > li > a {
+    text-decoration: none; 
+    display: block; 
+    padding: 10px;  
+}
+ul.nav > li:hover ul.dropdown-menu > li:hover {
+    background-color: #D8D8D8; 
+}
+nav {
+    margin-bottom: 50px;
+}
+nav > ul > li > a {
+    text-decoration: none; 
+}
 
 
 

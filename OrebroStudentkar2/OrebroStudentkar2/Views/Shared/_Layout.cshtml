@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     @if (ViewBag.SubTitle != null)
     {
         <title>@ViewBag.SubTitle</title>
@@ -14,37 +14,37 @@
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <link href="~/Content/bootstrap/css/bootstrap.css" rel="stylesheet" />
-    <script src="~/Content/bootstrap/js/bootstrap.min.js"></script>
 </head>
 <body>
     <div id="headerbackground">
     </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <img src="~/Content/Bilder/Grafik/header.gif" />
+    <div id="navbackground">
+    </div>
+    <div id="site">
+        <header>
+            <img id="headerpic" src="~/Content/Bilder/Grafik/header.gif" />
 
-                <a id="blimedlem" href="https://medlem.orebrostudentkar.se/">
-                </a>
-            </div>
-        </div>
-        <div class="row">
-            <nav>
+            <a id="blimedlem" href="https://medlem.orebrostudentkar.se/">
+            </a>
+        </header>
+        <nav>
                 <ul class="nav nav-tabs">
                     @if (ViewBag.Title == "Startsida")
                     {
-                        <li class="active"><a href="http://localhost:50193/Home/Index">Startsida</a></li>
+                        <li class="active menyitem"><a href="http://localhost:50193/Home/Index">Startsida</a></li>
                     }
                     else
                     {
-                        <li><a href="http://localhost:50193/Home/Index">Startsida</a></li>
+                        <li class="menyitem"><a href="http://localhost:50193/Home/Index">Startsida</a></li>
                     }
                     @if (ViewBag.Title == "Kårsektioner")
                     {
-                        <li class="active">
-                            <a class="dropdown-toggle" data-toggle="dropdown"
-                               href="http://localhost:50193/Sektion/Index">Kårsektioner<span class="caret"></span></a>
+                        <li class="active menyitem">
+                            <a class="dropdown-toggle"
+                               href="http://localhost:50193/Sektion/Index">
+                                Kårsektioner
+                                <img src="~/Content/Bilder/Grafik/arrowdown.gif" />
+                            </a>
                             <ul class="dropdown-menu">
                                 <li><a href="http://localhost:50193/Sektion/Index">Vad är en kårsektion?</a></li>
                                 <li><a href="http://localhost:50193/Sektion/Corax">Corax</a></li>
@@ -62,9 +62,12 @@
                     }
                     else
                     {
-                        <li>
-                            <a class="dropdown-toggle" data-toggle="dropdown"
-                               href="http://localhost:50193/Sektion/Index">Kårsektioner<span class="caret"></span></a>
+                        <li class="menyitem">
+                            <a class="dropdown-toggle"
+                               href="http://localhost:50193/Sektion/Index">
+                                Kårsektioner
+                                <img src="~/Content/Bilder/Grafik/arrowdown.gif" />
+                            </a>
                             <ul class="dropdown-menu">
                                 <li><a href="http://localhost:50193/Sektion/Index">Vad är en kårsektion?</a></li>
                                 <li><a href="http://localhost:50193/Sektion/Corax">Corax</a></li>
@@ -81,9 +84,12 @@
                     }
                     @if (ViewBag.Title == "Om oss")
                     {
-                        <li class="active">
-                            <a class="dropdown-toggle" data-toggle="dropdown"
-                               href="http://localhost:50193/Om/Index">Om oss<span class="caret"></span></a>
+                        <li class="active menyitem">
+                            <a class="dropdown-toggle"
+                               href="http://localhost:50193/Om/Index">
+                                Om oss
+                                <img src="~/Content/Bilder/Grafik/arrowdown.gif" />
+                            </a>
                             <ul class="dropdown-menu">
                                 <li><a href="http://localhost:50193/Om/Index">Vad är ÖS?</a></li>
                                 <li><a href="http://localhost:50193/Om/FUM">FUM</a></li>
@@ -100,9 +106,12 @@
                     }
                     else
                     {
-                        <li>
-                            <a class="dropdown-toggle" data-toggle="dropdown"
-                               href="http://localhost:50193/Om/Index">Om oss<span class="caret"></span></a>
+                        <li class="menyitem">
+                            <a class="dropdown-toggle"
+                               href="http://localhost:50193/Om/Index">
+                                Om oss
+                                <img src="~/Content/Bilder/Grafik/arrowdown.gif" />
+                            </a>
                             <ul class="dropdown-menu">
                                 <li><a href="http://localhost:50193/Om/Index">Vad är ÖS?</a></li>
                                 <li><a href="http://localhost:50193/Om/FUM">FUM</a></li>
@@ -118,10 +127,13 @@
                     }
                     @if (ViewBag.Title == "Ny student")
                     {
-                        <li class="active">
+                        <li class="active menyitem">
 
-                            <a class="dropdown-toggle" data-toggle="dropdown"
-                               href="http://localhost:50193/NyStudent/Index">Ny student<span class="caret"></span></a>
+                            <a class="dropdown-toggle"
+                               href="http://localhost:50193/NyStudent/Index">
+                                Ny student
+                                <img src="~/Content/Bilder/Grafik/arrowdown.gif" />
+                            </a>
                             <ul class="dropdown-menu">
                                 <li><a href="http://localhost:50193/NyStudent/Index">Välkommen ny student</a></li>
                                 <li><a href="http://localhost:50193/NyStudent/HittaBoende">Hitta boende</a></li>
@@ -132,9 +144,12 @@
                     }
                     else
                     {
-                        <li>
-                            <a class="dropdown-toggle" data-toggle="dropdown"
-                               href="http://localhost:50193/NyStudent/Index">Ny student<span class="caret"></span></a>
+                        <li class="menyitem">
+                            <a class="dropdown-toggle"
+                               href="http://localhost:50193/NyStudent/Index">
+                                Ny student
+                                <img src="~/Content/Bilder/Grafik/arrowdown.gif" />
+                            </a>
                             <ul class="dropdown-menu">
                                 <li><a href="http://localhost:50193/NyStudent/Index">Välkommen ny student</a></li>
                                 <li><a href="http://localhost:50193/NyStudent/HittaBoende">Hitta boende</a></li>
@@ -145,9 +160,12 @@
                     }
                     @if (ViewBag.Title == "Studentliv")
                     {
-                        <li class="active">
-                            <a class="dropdown-toggle" data-toggle="dropdown"
-                               href="http://localhost:50193/Studentliv/Index">Studentliv<span class="caret"></span></a>
+                        <li class="active menyitem">
+                            <a class="dropdown-toggle"
+                               href="http://localhost:50193/Studentliv/Index">
+                                Studentliv
+                                <img src="~/Content/Bilder/Grafik/arrowdown.gif" />
+                            </a>
                             <ul class="dropdown-menu">
                                 <li><a href="http://localhost:50193/Studentliv/Foreningar">Föreningar</a></li>
                                 <li><a href="http://localhost:50193/Studentliv/EngageraDig">Engagera dig</a></li>
@@ -160,9 +178,12 @@
                     }
                     else
                     {
-                        <li>
-                            <a class="dropdown-toggle" data-toggle="dropdown"
-                               href="http://localhost:50193/Studentliv/Index">Studentliv<span class="caret"></span></a>
+                        <li class="menyitem">
+                            <a class="dropdown-toggle"
+                               href="http://localhost:50193/Studentliv/Index">
+                                Studentliv
+                                <img src="~/Content/Bilder/Grafik/arrowdown.gif" />
+                            </a>
                             <ul class="dropdown-menu">
                                 <li><a href="http://localhost:50193/Studentliv/Foreningar">Föreningar</a></li>
                                 <li><a href="http://localhost:50193/Studentliv/EngageraDig">Engagera dig</a></li>
@@ -175,17 +196,24 @@
                     }
                     @if (ViewBag.Title == "Kontakta oss")
                     {
-                        <li class="active"><a href="http://localhost:50193/Home/KontaktaOss">Kontakta oss</a></li>
+                        <li class="active menyitem">
+                            <a href="http://localhost:50193/Home/KontaktaOss">Kontakta oss</a>
+                        </li>
                     }
                     else
                     {
-                        <li><a href="http://localhost:50193/Home/KontaktaOss">Kontakta oss</a></li>
+                        <li class="menyitem">
+                            <a href="http://localhost:50193/Home/KontaktaOss">Kontakta oss</a>
+                        </li>
                     }
                     @if (ViewBag.Title == "Dina rättigheter")
                     {
-                        <li class="active">
-                            <a class="dropdown-toggle" data-toggle="dropdown"
-                               href="http://localhost:50193/Utbildning/Index">Dina rättigheter<span class="caret"></span></a>
+                        <li class="active menyitem">
+                            <a class="dropdown-toggle"
+                               href="http://localhost:50193/Utbildning/Index">
+                                Dina rättigheter
+                                <img src="~/Content/Bilder/Grafik/arrowdown.gif" />
+                            </a>
                             <ul class="dropdown-menu">
                                 <li><a href="http://localhost:50193/Utbildning/Index">Utbildningsbevakning</a></li>
                                 <li><a href="http://localhost:50193/Utbildning/VanligaFragor">Vanliga frågor</a></li>
@@ -194,9 +222,12 @@
                     }
                     else
                     {
-                        <li>
-                            <a class="dropdown-toggle" data-toggle="dropdown"
-                               href="http://localhost:50193/Utbildning/Index">Dina rättigheter<span class="caret"></span></a>
+                        <li class="menyitem">
+                            <a class="dropdown-toggle"
+                               href="http://localhost:50193/Utbildning/Index">
+                                Dina rättigheter
+                                <img src="~/Content/Bilder/Grafik/arrowdown.gif" />
+                            </a>
                             <ul class="dropdown-menu">
                                 <li><a href="http://localhost:50193/Utbildning/Index">Utbildningsbevakning</a></li>
                                 <li><a href="http://localhost:50193/Utbildning/VanligaFragor">Vanliga frågor</a></li>
@@ -206,9 +237,8 @@
                     }
 
                 </ul>
-            </nav>
-        </div>
-        <div class="row">
+        </nav>
+        <div>
             @RenderBody()
         </div>
        
@@ -216,7 +246,22 @@
         @RenderSection("scripts", required: false)
     </div>
     <footer>
-        Kotte kotteKotte kotteKotte kotteKotte kotteKotte kotteKotte kotteKotte kotteKotte kotte Kotte kotteKotte kotteKotte kotte
+        <div id="footercontent">
+            <div id="kontaktuppgifter">
+                Telefon: 019 – 676 23 50 <br />
+                E-mail: kansli@orebrostudentkar.se
+            </div>
+            <div id="kansliöppettider">
+                Kansliets öppettider: <br />
+                Alla vardagar 10.00 till 13.00 
+            </div>
+            <address id="postadress">
+                Örebro studentkår <br />
+                Fakultetsgatan 3 <br />
+                702 81 Örebro
+            </address>
+            
+        </div>
     </footer>
 </body>
 </html>
