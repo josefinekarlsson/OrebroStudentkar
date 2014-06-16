@@ -1,18 +1,47 @@
 ﻿* {
-    margin: 0; 
-    padding: 0; 
-    font-family: Helvetica; 
+    font-family: Garamond; 
     color: black; 
 }
-
+ul, li {
+    margin: 0; 
+    padding: 0; 
+}
 header, footer, nav, section {
     display: block;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Sabon';
+    font-family: 'Century Gothic';
+}
+p {
+    font-size: large;  
+}
+a {
+    text-decoration: none; 
+}
+p > a:hover {
+    font-weight: bold; 
 }
 
+/*Container*/
+#site {
+    width: 1020px;
+    margin: auto;
+}
+
+/*Sidorna*/
+.leftcolumn {
+    width: 60%; 
+    float: left; 
+}
+
+.rightcolumn {
+    width: 30%; 
+    float: right; 
+}
+
+
+/*Header*/
 header {
     width: 100%; 
     height: 220px;
@@ -39,55 +68,30 @@ header {
     background-image: url(/Content/Bilder/Grafik/blimedlem.png);
 }
 
-footer {
-    width: 100%;
-    background: #43a838;
-    position: fixed;
-    bottom: 0;
-    padding: 15px; 
-}
-#footercontent {
-    width: 1020px;
-    margin: auto;
-    height: 65px; 
-}
-#postadress {
-    width: 260px; 
-    float: right;  
-}
-#kontaktuppgifter {
-    width: 260px; 
-    float: left;  
-}
-#kansliöppettider {
-    width: 260px; 
-    position: absolute; 
-    margin-left: 365px; 
-}
-
-#site {
-    width: 1020px;
-    margin: auto;
-}
-
 /*Navigering*/
 #navbackground {
     position: absolute; 
-    margin-top: 270px; 
+    margin-top: 262px; 
     border-bottom: 1px solid black; 
     width: 100%; 
     z-index: -1;
 }
 .menyitem {
     display: inline-block; 
-    padding: 15px; 
+    padding: 10px; 
     border-top-left-radius: 7px;
     border-top-right-radius: 7px; 
-    border: 1px solid black; 
+    border-bottom: 1px solid black; 
+    border-left: 1px solid white; 
+    border-top: 1px solid white; 
+    border-right: 1px solid white; 
 }
 .menyitem:hover {
     background-color: #D8D8D8; 
 }
+.menyitem > a {
+    font-family: 'Century Gothic'; 
+ }
 .active {
     background-color: #B8B8B8; 
     border-top: 1px solid black; 
@@ -112,7 +116,8 @@ ul.nav > li:hover ul.dropdown-menu > li {
     background-color: white; 
 }
 ul.nav > li:hover ul.dropdown-menu > li > a {
-    text-decoration: none; 
+    
+    font-family: 'Century Gothic';
     display: block; 
     padding: 10px;  
 }
@@ -126,7 +131,49 @@ nav > ul > li > a {
     text-decoration: none; 
 }
 
+/*Footer*/
+footer {
+    width: 100%;
+    background: #43a838;
+    position: fixed;
+    bottom: 0;
+    padding: 15px; 
+}
+#footercontent {
+    width: 1020px;
+    margin: auto;
+    height: 60px; 
+}
+#postadress {
+    width: 260px; 
+    float: right;  
+}
+#kontaktuppgifter {
+    width: 260px; 
+    float: left;  
+}
+#kansliöppettider {
+    width: 260px; 
+    position: absolute; 
+    margin-left: 365px; 
+}
+#footerseparator {
+    width: 100%; 
+    height: 50px; 
+    margin-bottom: 65px;
+    clear: both; 
+}
 
+/*Nyhetsflöde*/
+.nyhetssignatur { 
+    float: right;
+    font-style: italic;
+    font-size: large;
+}
+
+
+/* Standardgrejer nedanför, inget jag har gjort, följde med från template 
+-------------------------------------------------------------------------*/
 
 /* Styles for basic forms
 -----------------------------------------------------------*/

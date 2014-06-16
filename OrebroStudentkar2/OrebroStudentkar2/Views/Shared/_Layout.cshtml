@@ -194,18 +194,7 @@
                             </ul>
                         </li>
                     }
-                    @if (ViewBag.Title == "Kontakta oss")
-                    {
-                        <li class="active menyitem">
-                            <a href="http://localhost:50193/Home/KontaktaOss">Kontakta oss</a>
-                        </li>
-                    }
-                    else
-                    {
-                        <li class="menyitem">
-                            <a href="http://localhost:50193/Home/KontaktaOss">Kontakta oss</a>
-                        </li>
-                    }
+                   
                     @if (ViewBag.Title == "Dina rättigheter")
                     {
                         <li class="active menyitem">
@@ -235,16 +224,30 @@
                             </ul>
                         </li>
                     }
-
+                    @if (ViewBag.Title == "Kontakta oss")
+                    {
+                        <li class="active menyitem">
+                            <a href="http://localhost:50193/Home/KontaktaOss">Kontakta oss</a>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="menyitem">
+                            <a href="http://localhost:50193/Home/KontaktaOss">Kontakta oss</a>
+                        </li>
+                    }
                 </ul>
         </nav>
         <div>
             @RenderBody()
+            <div id="footerseparator"></div>
         </div>
        
         @Scripts.Render("~/bundles/jquery")
         @RenderSection("scripts", required: false)
+       
     </div>
+    
     <footer>
         <div id="footercontent">
             <div id="kontaktuppgifter">
@@ -255,13 +258,16 @@
                 Kansliets öppettider: <br />
                 Alla vardagar 10.00 till 13.00 
             </div>
-            <address id="postadress">
-                Örebro studentkår <br />
-                Fakultetsgatan 3 <br />
-                702 81 Örebro
-            </address>
-            
-        </div>
+            <div id="postadress">
+                Post- och besöksadress
+                <address>
+                    Örebro studentkår <br />
+                    Fakultetsgatan 3 <br />
+                    702 81 Örebro
+                </address>
+            </div>
+
+            </div>
     </footer>
 </body>
 </html>

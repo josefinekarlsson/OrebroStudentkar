@@ -139,8 +139,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\Bilder\Grafik\arrowdown.gif" />
+    <Content Include="Content\Bilder\Grafik\blimedlem.png" />
     <Content Include="Content\Bilder\Grafik\header.gif" />
     <Content Include="Content\Bilder\Grafik\headerdel.gif" />
+    <Content Include="Content\Bilder\Grafik\mailicon.gif" />
+    <Content Include="Content\Bilder\Grafik\phoneicon.gif" />
+    <Content Include="Content\Bilder\Grafik\snailmailicon.gif" />
     <Content Include="Content\bootstrap\css\bootstrap.css" />
     <Content Include="Content\bootstrap\css\bootstrap.min.css" />
     <Content Include="Content\bootstrap\fonts\glyphicons-halflings-regular.svg" />
