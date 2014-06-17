@@ -22,6 +22,10 @@ a {
 p > a:hover {
     font-weight: bold; 
 }
+td {
+    padding: 5px; 
+    border-bottom: 1px solid grey; 
+}
 
 /*Container*/
 #site {

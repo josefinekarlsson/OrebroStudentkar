@@ -145,6 +145,15 @@
     <Content Include="Content\Bilder\Grafik\headerdel.gif" />
     <Content Include="Content\Bilder\Grafik\mailicon.gif" />
     <Content Include="Content\Bilder\Grafik\phoneicon.gif" />
+    <Content Include="Content\Bilder\Grafik\Sektioner\corax.png" />
+    <Content Include="Content\Bilder\Grafik\Sektioner\doksek.png" />
+    <Content Include="Content\Bilder\Grafik\Sektioner\gih.png" />
+    <Content Include="Content\Bilder\Grafik\Sektioner\grythyttan.png" />
+    <Content Include="Content\Bilder\Grafik\Sektioner\musik.png" />
+    <Content Include="Content\Bilder\Grafik\Sektioner\serum.png" />
+    <Content Include="Content\Bilder\Grafik\Sektioner\sesam.png" />
+    <Content Include="Content\Bilder\Grafik\Sektioner\sobra.png" />
+    <Content Include="Content\Bilder\Grafik\Sektioner\teknat.png" />
     <Content Include="Content\Bilder\Grafik\snailmailicon.gif" />
     <Content Include="Content\bootstrap\css\bootstrap.css" />
     <Content Include="Content\bootstrap\css\bootstrap.min.css" />
@@ -275,6 +284,7 @@
     <Content Include="Views\Studentliv\Studiemiljo.cshtml" />
     <Content Include="Views\Utbildning\Index.cshtml" />
     <Content Include="Views\Utbildning\VanligaFragor.cshtml" />
+    <Content Include="Views\Shared\Navigation.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
