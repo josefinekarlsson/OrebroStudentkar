@@ -1,5 +1,7 @@
-﻿@{
+﻿@model OrebroStudentkar2.Models.ContactModel
+@{
     ViewBag.Title = "Kontakta oss";
+    
 }
 <div class="rightcolumn">
     <p>
@@ -35,17 +37,42 @@
         Vi finns på Kårhusets vänstra sida, sett från Krakafontänen.
     </p>
 
+    
     <h3>Våra öppettider</h3>
     <p>Alla vardagar 10.00 till 13.00</p>
 
-    <h3>Kontaktformulär</h3>
-
-    <p><em> Formuläret skickas till kansli@orebrostudentkar.se </em></p>
-    <form>
-        <input type="text" /> <br />
-        <input type="text" /> <br />
+    <h2>Kontaktformulär</h2>
+    @if (TempData["notice"] != null)
+    {
+        <h4 style="color: red;">@TempData["notice"]</h4>
+    }
+    @using (Html.BeginForm(null, null, FormMethod.Post, new { @id = "ContactForm", @name = "ContactForm" }))
+    { 
+        <div class="form-group">
+            @Html.Label("Ämne", new { @class = "label" }) <br />
+            @Html.TextBoxFor(model => model.Subject, new { @class = "textbox" }) <br />
+            @Html.ValidationMessageFor(model => model.Subject)
+        </div>
+        <div class="form-group">
+            @Html.Label("Meddelande", new { @class = "label" }) <br />
+            @Html.TextAreaFor(model => model.Message)<br />
+            @Html.ValidationMessageFor(model => model.Message)
+        </div>
+        <div class="form-group">
+            
+            @Html.Label("Namn", new { @class = "label" }) <br />
+            @Html.TextBoxFor(model => model.Name, new { @class = "textbox" })<br />
+            @Html.ValidationMessageFor(model => model.Name)
+        </div>
+        <div class="form-group">
+            @Html.Label("E-post", new { @class = "label" }) <br />
+            @Html.TextBoxFor(model => model.Email, new { @class = "textbox" }) <br />
+            @Html.ValidationMessageFor(model => model.Email)
+        </div>
         <button type="submit">Skicka</button>
-    </form>
+    } 
+
+
     <h2>Heltidsarvoderade</h2>
     <p>Bilder + kontaktuppgifter till dem. </p>
     

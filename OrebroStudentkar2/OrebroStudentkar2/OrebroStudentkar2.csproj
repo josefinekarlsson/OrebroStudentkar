@@ -136,6 +136,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\ContactModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -145,15 +146,23 @@
     <Content Include="Content\Bilder\Grafik\headerdel.gif" />
     <Content Include="Content\Bilder\Grafik\mailicon.gif" />
     <Content Include="Content\Bilder\Grafik\phoneicon.gif" />
+    <Content Include="Content\Bilder\Grafik\pil.png" />
     <Content Include="Content\Bilder\Grafik\Sektioner\corax.png" />
+    <Content Include="Content\Bilder\Grafik\Sektioner\coraxfadder.jpg" />
     <Content Include="Content\Bilder\Grafik\Sektioner\doksek.png" />
     <Content Include="Content\Bilder\Grafik\Sektioner\gih.png" />
+    <Content Include="Content\Bilder\Grafik\Sektioner\gihfadder.jpg" />
     <Content Include="Content\Bilder\Grafik\Sektioner\grythyttan.png" />
+    <Content Include="Content\Bilder\Grafik\Sektioner\grythyttanfadder.jpg" />
     <Content Include="Content\Bilder\Grafik\Sektioner\musik.png" />
+    <Content Include="Content\Bilder\Grafik\Sektioner\musikfadder.jpg" />
     <Content Include="Content\Bilder\Grafik\Sektioner\serum.png" />
+    <Content Include="Content\Bilder\Grafik\Sektioner\serumfadder.jpg" />
     <Content Include="Content\Bilder\Grafik\Sektioner\sesam.png" />
     <Content Include="Content\Bilder\Grafik\Sektioner\sobra.png" />
+    <Content Include="Content\Bilder\Grafik\Sektioner\sobrafadder.jpg" />
     <Content Include="Content\Bilder\Grafik\Sektioner\teknat.png" />
+    <Content Include="Content\Bilder\Grafik\Sektioner\teknatfadder.jpg" />
     <Content Include="Content\Bilder\Grafik\snailmailicon.gif" />
     <Content Include="Content\bootstrap\css\bootstrap.css" />
     <Content Include="Content\bootstrap\css\bootstrap.min.css" />
@@ -236,6 +245,7 @@
     <Content Include="Scripts\knockout-2.2.0.debug.js" />
     <Content Include="Scripts\knockout-2.2.0.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\mylightbox.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -288,7 +298,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

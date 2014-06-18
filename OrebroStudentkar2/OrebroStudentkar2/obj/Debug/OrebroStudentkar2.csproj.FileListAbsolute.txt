@@ -59,6 +59,6 @@ C:\Users\Jossan\Desktop\OrebroStudentkar\OrebroStudentkar2\OrebroStudentkar2\bin
 C:\Users\Jossan\Desktop\OrebroStudentkar\OrebroStudentkar2\OrebroStudentkar2\bin\System.Web.WebPages.xml
 C:\Users\Jossan\Desktop\OrebroStudentkar\OrebroStudentkar2\OrebroStudentkar2\bin\System.Web.WebPages.Deployment.xml
 C:\Users\Jossan\Desktop\OrebroStudentkar\OrebroStudentkar2\OrebroStudentkar2\bin\System.Web.WebPages.Razor.xml
-C:\Users\Jossan\Desktop\OrebroStudentkar\OrebroStudentkar2\OrebroStudentkar2\obj\Debug\OrebroStudentkar2.csprojResolveAssemblyReference.cache
 C:\Users\Jossan\Desktop\OrebroStudentkar\OrebroStudentkar2\OrebroStudentkar2\obj\Debug\OrebroStudentkar2.dll
 C:\Users\Jossan\Desktop\OrebroStudentkar\OrebroStudentkar2\OrebroStudentkar2\obj\Debug\OrebroStudentkar2.pdb
+C:\Users\Jossan\Desktop\OrebroStudentkar\OrebroStudentkar2\OrebroStudentkar2\obj\Debug\OrebroStudentkar2.csprojResolveAssemblyReference.cache
