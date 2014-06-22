@@ -12,10 +12,6 @@ namespace OrebroStudentkar1.Controllers
         {
             return View();
         }
-        public ActionResult Foreningar()
-        {
-            return View();
-        }
         public ActionResult Karhuset()
         {
             return View();
@@ -36,6 +32,9 @@ namespace OrebroStudentkar1.Controllers
         {
             return View();
         }
-
+        public ActionResult Losnummer()
+        {
+            return View();
+        }
     }
 }

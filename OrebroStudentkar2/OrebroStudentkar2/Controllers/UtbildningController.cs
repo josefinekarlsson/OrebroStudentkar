@@ -12,6 +12,14 @@ namespace OrebroStudentkar1.Controllers
         {
             return View();
         }
+        public ActionResult Utbildningsbevakning()
+        {
+            return View();
+        }
+        public ActionResult Studentombud()
+        {
+            return View();
+        }
         public ActionResult VanligaFragor()
         {
             return View();

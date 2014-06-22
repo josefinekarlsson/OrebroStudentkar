@@ -13,15 +13,26 @@
     }
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
-    
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="~/Scripts/jquery.validate.js"></script>
-    <script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
+    @*<script src="~/Scripts/jquery.validate.js"></script>
+        <script src="~/Scripts/jquery.validate.unobtrusive.js"></script>*@
 
     @*<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>*@
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>*@
+
 </head>
 <body>
+    <!--Facebook like button, according to https://developers.facebook.com/docs/plugins/like-button -->
+    <div id="fb-root"></div>
+    <script>
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
     <div id="headerbackground">
     </div>
     @if (ViewBag.Type != "Sektion")
@@ -29,47 +40,47 @@
         <div id="navbackground">
         </div>
     }
-    
+
     <div id="site">
         <header>
             <a href="~/Home/Index">
-                <img id="headerpic" src="~/Content/Bilder/Grafik/header.gif" />
+                <img id="headerpic" src="~/Content/Grafik/header.gif" />
             </a>
             @if (ViewBag.SubTitle == "Corax")
-            { 
-                <img src="~/Content/Bilder/Grafik/Sektioner/corax.png" />
+            {
+                <img src="~/Content/Sektioner/corax.png" />
             }
             @if (ViewBag.SubTitle == "DokSek")
             {
-                <img style="margin-top: 60px;" src="~/Content/Bilder/Grafik/Sektioner/doksek.png" />
+                <img style="margin-top: 60px;" src="~/Content/Sektioner/doksek.png" />
             }
             @if (ViewBag.SubTitle == "Musik")
             {
-                <img style="margin-top: 30px; "src="~/Content/Bilder/Grafik/Sektioner/musik.png" />
+                <img style="margin-top: 30px; " src="~/Content/Sektioner/musik.png" />
             }
             @if (ViewBag.SubTitle == "Serum")
             {
-                <img src="~/Content/Bilder/Grafik/Sektioner/serum.png" />
+                <img src="~/Content/Sektioner/serum.png" />
             }
             @if (ViewBag.SubTitle == "Sesam")
             {
-                <img style="margin-top: 50px;" src="~/Content/Bilder/Grafik/Sektioner/sesam.png" />
+                <img style="margin-top: 50px;" src="~/Content/Sektioner/sesam.png" />
             }
             @if (ViewBag.SubTitle == "Sobra")
             {
-                <img style="margin-top: 20px" src="~/Content/Bilder/Grafik/Sektioner/sobra.png" />
+                <img style="margin-top: 20px" src="~/Content/Sektioner/sobra.png" />
             }
             @if (ViewBag.SubTitle == "GIH")
             {
-                <img style="margin-top: 20px;" src="~/Content/Bilder/Grafik/Sektioner/gih.png" />
+                <img style="margin-top: 20px;" src="~/Content/Sektioner/gih.png" />
             }
             @if (ViewBag.SubTitle == "Grythyttan")
             {
-                <img src="~/Content/Bilder/Grafik/Sektioner/grythyttan.png" />
+                <img src="~/Content/Sektioner/grythyttan.png" />
             }
             @if (ViewBag.SubTitle == "Teknat")
             {
-                <img style="margin-top: 60px;" src="~/Content/Bilder/Grafik/Sektioner/teknat.png" />
+                <img style="margin-top: 60px;" src="~/Content/Sektioner/teknat.png" />
             }
             <a id="blimedlem" href="https://medlem.orebrostudentkar.se/">
             </a>
@@ -78,7 +89,7 @@
         {
             <p>
                 <a href="~/Home/Index">
-                    <img src="~/Content/Bilder/Grafik/pil.png" />Tillbaks till Örebro Studentkårs huvudsida
+                    <img src="~/Content/Grafik/pil.png" />Tillbaks till Örebro Studentkårs huvudsida
                 </a>
             </p>
         }
@@ -86,39 +97,49 @@
         {
             @RenderPage("Navigation.cshtml")
         }
-        
+
         <div>
             @RenderBody()
 
-            <!--Ser till så innehållet inte hamnar bakom footern...-->
+            <!--Ser till så innehållet inte hamnar bakom footern...Eller den gjorde det, nu vettefan varför den måste ligga där.-->
             <div id="footerseparator"></div>
         </div>
-       
+
         @Scripts.Render("~/bundles/jquery")
         @RenderSection("scripts", required: false)
-       
+
     </div>
-    
+
     <footer>
         <div id="footercontent">
             <div id="kontaktuppgifter">
                 Telefon: 019 – 676 23 50 <br />
-                E-mail: kansli@orebrostudentkar.se
+                E-mail: kansli@orebrostudentkar.se <br />
+                Kansliets öppettider:<br />
+                Alla vardagar 10.00 till 13.00
             </div>
             <div id="kansliöppettider">
-                Kansliets öppettider: <br />
-                Alla vardagar 10.00 till 13.00 
+                Post- och besöksadress:<br />
+                Örebro studentkår <br />
+                Fakultetsgatan 3 <br />
+                702 81 Örebro
             </div>
             <div id="postadress">
-                Post- och besöksadress
-                <address>
-                    Örebro studentkår <br />
-                    Fakultetsgatan 3 <br />
-                    702 81 Örebro
-                </address>
+                <a href="https://www.facebook.com/orebrostudentkar">
+                    <img src="~/Content/Grafik/facebook.png" />
+                </a>
+                <a href="http://instagram.com/orebrostudentkar">
+                    <img src="~/Content/Grafik/insta.png" />
+                </a>
+
+                
+                <br />
+                <div class="fb-like" data-href="https://www.facebook.com/orebrostudentkar" 
+                     data-width="500" data-layout="button" data-action="like" 
+                     data-show-faces="false" data-share="false"></div>
             </div>
 
-            </div>
+        </div>
     </footer>
 </body>
 </html>
