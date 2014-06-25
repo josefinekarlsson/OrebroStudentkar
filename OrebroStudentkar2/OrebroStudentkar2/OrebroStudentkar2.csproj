@@ -148,6 +148,12 @@
     <Content Include="Content\bootstrap\img\glyphicons-halflings.png" />
     <Content Include="Content\bootstrap\js\bootstrap.js" />
     <Content Include="Content\bootstrap\js\bootstrap.min.js" />
+    <Content Include="Content\Foreningar\amnesty.png" />
+    <Content Include="Content\Foreningar\beerpong.png" />
+    <Content Include="Content\Foreningar\elsa.png" />
+    <Content Include="Content\Foreningar\lrstud.png" />
+    <Content Include="Content\Foreningar\mf.png" />
+    <Content Include="Content\Foreningar\spex.png" />
     <Content Include="Content\Foreningar\uflogga.gif" />
     <Content Include="Content\Grafik\arrowdown.gif" />
     <Content Include="Content\Grafik\blimedlem.png" />
@@ -241,7 +247,7 @@
     <Content Include="Content\Foreningar\Startkit\Samarbetsavtal.docx" />
     <Content Include="Content\Foreningar\Startkit\Stadgar.docx" />
     <Content Include="Content\Foreningar\Startkit\Startkit.zip" />
-    <Content Include="Content\Foreningar\Startkit\Styrelsen kontaktuppgifter.docx" />
+    <Content Include="Content\Foreningar\Startkit\Kontaktuppgifter.docx" />
     <Content Include="Content\Foreningar\Startkit\Verksamhetsplan.docx" />
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.8.2.js" />
@@ -259,6 +265,7 @@
     <Content Include="Scripts\knockout-2.2.0.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\mylightbox.js" />
+    <Content Include="Scripts\mystartkit.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -313,6 +320,12 @@
     <Content Include="Views\Forening\Index.cshtml" />
     <Content Include="Views\Forening\UF.cshtml" />
     <Content Include="Views\Forening\Startkit.cshtml" />
+    <Content Include="Views\Forening\Beerpong.cshtml" />
+    <Content Include="Views\Forening\Medicinska.cshtml" />
+    <Content Include="Views\Forening\Elsa.cshtml" />
+    <Content Include="Views\Forening\LRF.cshtml" />
+    <Content Include="Views\Forening\Spex.cshtml" />
+    <Content Include="Views\Forening\Amnesty.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

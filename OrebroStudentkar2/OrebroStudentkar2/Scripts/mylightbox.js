@@ -1,39 +1,43 @@
 ﻿$(document).ready(function () {
-    $('.lightbox').click(function () {
-        show_box();
+
+    $('#imgmapStudentrepr').hover(function () {
+        show_box("studentrepresentanter");
+    }, function () {
+        //On mouse out - do nothing. 
+        //If the function is not defined, the box shows twice. 
+        //Check this for more info: http://api.jquery.com/hover/
     });
+
+    $('#imgmapFum').hover(function () {
+        show_box("fum");
+    }, function () {
+
+    });
+
+    $('#imgmapKS').hover(function () {
+        show_box("KS");
+    }, function () {
+
+    });
+
     $('.close').click(function () {
         close_box();
     });
+
     $('.backdrop').click(function () {
         close_box();
     });
-    $('.lightbox').hover(function () {
-
-    });
-
 });
 
-function show_box() {
-    //var topmargin = $('#orgkarta').scrollTop + 'px';
-    //var scrollTop = $(window).scrollTop();
-    //console.log(scrollTop);
-    //var elementOffset = $('#orgkarta').offset().top;
-    //console.log(elementOffset); 
-    //var distance = (elementOffset - scrollTop);
-    //console.log(distance);
-    //$('.box').css('top', distance + 'px');
-
-    $('.backdrop, .box').animate({ 'opacity': '.50' }, 200, 'linear');
+function show_box(msg) {
+    $('#boxtext').text(msg); 
+    //$('.backdrop, .box').animate({ 'opacity': '.0' }, 200, 'linear');
     $('.box').animate({ 'opacity': '1.00' }, 200, 'linear');
     $('.backdrop, .box').css('display', 'block');
-    $("body").css("overflow", "hidden");
-
 }
+
 function close_box() {
     $('.backdrop, .box').animate({ 'opacity': '0' }, 200, 'linear', function () {
         $('.backdrop, .box').css('display', 'none');
     });
-    $("body").css("overflow", "auto");
-    return false; 
 }

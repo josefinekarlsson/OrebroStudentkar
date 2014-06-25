@@ -12,11 +12,35 @@ namespace OrebroStudentkar2.Controllers
         {
             return View();
         }
+        public ActionResult Startkit()
+        {
+            return View();
+        }
+        public ActionResult Beerpong()
+        {
+            return View();
+        }
         public ActionResult UF() 
         {
             return View(); 
         }
-        public ActionResult Startkit()
+        public ActionResult Medicinska()
+        {
+            return View();
+        }
+        public ActionResult Elsa()
+        {
+            return View(); 
+        }
+        public ActionResult LRF()
+        {
+            return View();
+        }
+        public ActionResult Spex()
+        {
+            return View(); 
+        }
+        public ActionResult Amnesty()
         {
             return View();
         }
