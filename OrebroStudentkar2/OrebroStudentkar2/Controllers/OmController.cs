@@ -44,5 +44,9 @@ namespace OrebroStudentkar1.Controllers
         {
             return View();
         }
+        public ActionResult Roller()
+        {
+            return View();
+        }
     }
 }

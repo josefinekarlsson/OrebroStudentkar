@@ -2,13 +2,18 @@
     ViewBag.Title = "Studentliv";
     ViewBag.SubTitle = "Amnesty";
 }
+<div class="breadcrumb">
+    <a href="~/Home/Index">Hem</a> > <a href="~/Forening/Index">Samarbetsföreningar</a> > Amnesty Juristgruppen
+</div>
 <div class="leftcolumn">
     <h2>Amnesty Juristgruppen</h2>
+    <img class="foreningslogga" src="~/Content/Foreningar/amnesty.png" />
     <p>
         Vi är en grupp bestående av jurist- och rättsvetenskapstuderande som jobbar för att stärka de
         mänskliga rättigheterna i vår omvärld. Mänskliga rättigheter ska gälla alla alltid. Trots detta
         kränks människors rättigheter varje dag runt om i världen.
     </p>
+    
     <p>
         Juristgruppen arbetar med att stärka skyddet för mänskliga rättigheter i såväl nationell som
         internationell lagstiftning och rättstillämpning. Ett sätt vi försöker att göra detta på
@@ -35,9 +40,6 @@
     <p>
         Gilla <a href="https://www.facebook.com/AmnestyJuristgruppenVidOrebroUniversitet">vår facebooksida</a> och
         bli medlem i gruppen genom att maila juristgruppen.orebro@mail.amnesty.se.
-        Besök även svenska amnestysektionens hemsida för mer information om organisationen.
-    </p>
+        Besök även svenska amnestysektionens <a href="http://www.amnesty.se/">hemsida</a> för mer information om organisationen.</p>
 </div>
-<div class="rightcolumn">
-    <img src="~/Content/Foreningar/amnesty.png" />
-</div>
+@RenderPage("Foreningslista.cshtml")

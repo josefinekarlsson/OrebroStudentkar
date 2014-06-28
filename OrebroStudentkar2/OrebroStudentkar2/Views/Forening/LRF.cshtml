@@ -2,15 +2,21 @@
     ViewBag.Title = "Studentliv";
     ViewBag.SubTitle = "LR Stud";
 }
+<div class="breadcrumb">
+    <a href="~/Home/Index">Hem</a> > <a href="~/Forening/Index">Samarbetsföreningar</a> > LR Stud
+</div>
 <div class="leftcolumn">
     <h2>Lärarnas Riksförbunds studerandeförening</h2>
-    <p>
+    <img class="foreningslogga" src="~/Content/Foreningar/lrstud.png" />
+      <p>
         Lärarnas Riksförbunds studerandeförening (LR Stud) samlar grund- och ämneslärarstudenter som brinner
         för utbildningspolitik och fackliga frågor. Tillsammans har vi en vision av en bättre skola och en
         bättre lärarutbildning. I Örebro arrangerar vi föreläsningar, kurser, skriver debattinlägg och åker
         på centrala arrangemang. Alla våra aktiviteter är gratis för medlemmar, och medlemskap är gratis fram
         till 6 månader efter examen.
     </p>
+
+  
     <h4>Vill du veta mer, eller engagera dig?</h4>
     <p>
         Skicka  oss ett mail på lrstud.orebro@gmail.com, gå med i vår grupp på facebook 
@@ -20,6 +26,5 @@
         eller ta kontakt med ordförande Fredrik Stillerud på 0721670780.
     </p>
 </div>
-<div class="rightcolumn">
-    <img src="~/Content/Foreningar/lrstud.png" />
-</div>
+
+@RenderPage("Foreningslista.cshtml")

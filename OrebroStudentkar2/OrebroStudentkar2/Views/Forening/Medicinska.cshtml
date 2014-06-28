@@ -2,13 +2,18 @@
     ViewBag.Title = "Studentliv";
     ViewBag.SubTitle = "Medicinska föreningen";
 }
+<div class="breadcrumb">
+    <a href="~/Home/Index">Hem</a> > <a href="~/Forening/Index">Samarbetsföreningar</a> > Medicinska föreningen
+</div>
 <div class="leftcolumn">
     <h2>Medicinska Föreningen Örebro</h2>
+    <img class="foreningslogga" src="~/Content/Foreningar/mf.png" />
     <p>
         Medicinska Föreningen Örebro startades för att främja gemenskapen bland läkarstudenter vid Örebro universitet.
         Idag har vi ett antal utskott som anordnar allt ifrån gasquer på slottet, sittningar och pubar till
         idrottsträningar och kliniska övningskvällar där man kan glänsa med sitt stetoskop, och mycket mer.
     </p>
+
     <p>
         Medlemskap för läkarstudenter vid Örebro universitet är kostnadsfritt och anmälan görs via MFÖ:s hemsida.
         Det är även möjligt att bli stödmedlem. MFÖ är en politiskt, religiöst och fackligt obunden förening.
@@ -20,7 +25,5 @@
         eller på <a href="http://www.facebook.com/mforebro">www.facebook.com/mforebro</a>
     </p>
 </div>
-<div class="rightcolumn">
-    <img src="~/Content/Foreningar/mf.png" />
 
-</div>
+@RenderPage("Foreningslista.cshtml")

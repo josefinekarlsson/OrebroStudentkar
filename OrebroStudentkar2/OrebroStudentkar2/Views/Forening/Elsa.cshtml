@@ -2,9 +2,13 @@
     ViewBag.Title = "Studentliv";
     ViewBag.SubTitle = "Elsa";
 }
-
+<div class="breadcrumb">
+    <a href="~/Home/Index">Hem</a> > <a href="~/Forening/Index">Samarbetsföreningar</a> > ELSA
+</div>
 <div class="leftcolumn">
     <h2>ELSA</h2>
+
+    <img class="foreningslogga" src="~/Content/Foreningar/elsa.png" />
     <p>
         ELSA (European Law Students’ Association) är världens största internationella och oberoende
         förening som styrs av och för juridikstudenter och unga jurister. ELSA består av sammanlagt
@@ -27,6 +31,5 @@
         <a href="http://www.elsasweden.org">www.elsasweden.org</a> 
     </p>
 </div>
-<div class="rightcolumn">
-    <img src="~/Content/Foreningar/elsa.png" />
-</div>
+
+@RenderPage("Foreningslista.cshtml")

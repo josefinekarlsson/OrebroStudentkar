@@ -44,5 +44,13 @@ namespace OrebroStudentkar2.Controllers
         {
             return View();
         }
+        public ActionResult Skane()
+        {
+            return View();
+        }
+        public ActionResult JF()
+        {
+            return View(); 
+        }
     }
 }

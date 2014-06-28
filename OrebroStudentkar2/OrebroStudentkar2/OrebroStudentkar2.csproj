@@ -141,6 +141,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\Bilder\Kontakt\albina_300px.jpg" />
+    <Content Include="Content\Bilder\Kontakt\andreas_300px.jpg" />
+    <Content Include="Content\Bilder\Kontakt\matilde_300px.jpg" />
+    <Content Include="Content\Bilder\orebrogavan.png" />
     <Content Include="Content\bootstrap\css\bootstrap.css" />
     <Content Include="Content\bootstrap\css\bootstrap.min.css" />
     <Content Include="Content\bootstrap\fonts\glyphicons-halflings-regular.svg" />
@@ -151,22 +155,29 @@
     <Content Include="Content\Foreningar\amnesty.png" />
     <Content Include="Content\Foreningar\beerpong.png" />
     <Content Include="Content\Foreningar\elsa.png" />
+    <Content Include="Content\Foreningar\jf.png" />
     <Content Include="Content\Foreningar\lrstud.png" />
     <Content Include="Content\Foreningar\mf.png" />
+    <Content Include="Content\Foreningar\skane.png" />
     <Content Include="Content\Foreningar\spex.png" />
     <Content Include="Content\Foreningar\uflogga.gif" />
     <Content Include="Content\Grafik\arrowdown.gif" />
     <Content Include="Content\Grafik\blimedlem.png" />
     <Content Include="Content\Grafik\engagemangskarta.gif" />
+    <Content Include="Content\Grafik\excelicon.png" />
     <Content Include="Content\Grafik\facebook.png" />
     <Content Include="Content\Grafik\header.gif" />
     <Content Include="Content\Grafik\headerdel.gif" />
     <Content Include="Content\Grafik\insta.png" />
     <Content Include="Content\Grafik\mailicon.gif" />
     <Content Include="Content\Grafik\organisationskarta.gif" />
+    <Content Include="Content\Grafik\pdficon.png" />
     <Content Include="Content\Grafik\phoneicon.gif" />
     <Content Include="Content\Grafik\pil.png" />
     <Content Include="Content\Grafik\snailmailicon.gif" />
+    <Content Include="Content\Grafik\startkit.png" />
+    <Content Include="Content\Grafik\wordicon.png" />
+    <Content Include="Content\Grafik\zipicon.png" />
     <Content Include="Content\Sektioner\corax.png" />
     <Content Include="Content\Sektioner\coraxfadder.jpg" />
     <Content Include="Content\Sektioner\doksek.png" />
@@ -249,6 +260,8 @@
     <Content Include="Content\Foreningar\Startkit\Startkit.zip" />
     <Content Include="Content\Foreningar\Startkit\Kontaktuppgifter.docx" />
     <Content Include="Content\Foreningar\Startkit\Verksamhetsplan.docx" />
+    <Content Include="Content\Styrdokument\Asiktsdokument.pdf" />
+    <Content Include="Content\Styrdokument\Visionsdokument.pdf" />
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.8.2.js" />
     <Content Include="Scripts\jquery-1.8.2.min.js" />
@@ -326,6 +339,10 @@
     <Content Include="Views\Forening\LRF.cshtml" />
     <Content Include="Views\Forening\Spex.cshtml" />
     <Content Include="Views\Forening\Amnesty.cshtml" />
+    <Content Include="Views\Forening\Skane.cshtml" />
+    <Content Include="Views\Forening\Foreningslista.cshtml" />
+    <Content Include="Views\Forening\JF.cshtml" />
+    <Content Include="Views\Om\Roller.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

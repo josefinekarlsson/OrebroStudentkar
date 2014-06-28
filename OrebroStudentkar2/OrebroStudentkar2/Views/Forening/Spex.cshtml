@@ -2,6 +2,9 @@
     ViewBag.Title = "Studentliv";
     ViewBag.SubTitle = "Örebrospexet";
 }
+<div class="breadcrumb">
+    <a href="~/Home/Index">Hem</a> > <a href="~/Forening/Index">Samarbetsföreningar</a> > Örebrospexet
+</div>
 <div class="leftcolumn">
     <h2>Örebrospexet – för en roligare studietid!</h2>
     <p>
@@ -15,6 +18,7 @@
         kan du göra nästan vad som helst: Agera, snickra, sy, skriva låttexter, sjunga, spela instrument,
         laga mat, måla, dansa, jaga sponsorer, sköta ljud&ljus, sminka, designa trycksaker, fixa fester...
     </p>
+  
     <p>
         I början av hösten spelar vi en extraföreställning av vårens produktion, den s.k. Nolleföreställningen.
         Ta chansen att uppleva vad ett spex är! Hösten 2014 är det lördag 20 september som gäller.
@@ -34,8 +38,7 @@
         <li>Gilla <a href="https://www.facebook.com/pages/%C3%96rebrospexet/127407927298077">vår sida</a> på facebook</li>
         <li>Maila producenterna på producent@orebrospexet.com</li>
     </ul>
-
-</div>
-<div class="rightcolumn">
     <img src="~/Content/Foreningar/spex.png" />
 </div>
+
+@RenderPage("Foreningslista.cshtml")
