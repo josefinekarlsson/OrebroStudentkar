@@ -69,6 +69,12 @@ dd {
 .foreningslista > p > a:hover {
     text-decoration: underline; 
 }
+.center {
+    display: block; 
+    margin: auto; 
+}
+
+
 /*Container*/
 #site {
     width: 1020px;
@@ -109,12 +115,18 @@ header {
 
 #blimedlem {
     display: block;
-    height: 190px;
+    height: 180px;
     width: 180px;
     margin-top: 30px;
     float: right;
     background-image: url(/Content/Grafik/blimedlem.png);
 }
+
+#blimedlem:hover {
+
+    background-image: url(/Content/Grafik/blimedlemhover.png);
+}
+
 
 /*Navigering*/
 #navbackground {
@@ -187,6 +199,7 @@ footer {
     padding: 15px; 
     color: white;
     font-size: large; 
+    margin-top: 40px; 
 }
 #footercontent {
     bottom: 0; 
@@ -195,10 +208,13 @@ footer {
     height: 80px; 
     color: white;
 }
-#postadress {
+#social {
     width: 260px; 
     float: right; 
     color: white; 
+}
+#social > a {
+    text-decoration: none; 
 }
 #kontaktuppgifter {
     width: 260px; 
@@ -242,21 +258,132 @@ footer {
 /*Kontaktsidan*/
 .kontaktgrupp {
     width: 100%; 
- 
+    clear: both; 
 }
 .kontakt {
     float: left;
-    padding: 20px 20px 20px 0px; 
+    padding: 0px 40px 0px 0px; 
+    width: 300px; 
 }
 
 #mininfo {
     clear: both; 
-    font-size: smaller;
+    font-size: medium;
 }
-/*Lightbox, modalen som poppar upp från imagemapen*/
+/* Organisationskartan */
+#organisationskarta {
+    width: 910px; 
+    height: 700px; 
+    background-image: url(/Content/Grafik/organisationskarta.png); 
+    position: relative; 
+}
+.clickarea {
+    /*background-color: pink;*/ 
+    position: absolute; 
+    /*opacity: 0.6;*/ 
+    z-index: 40; 
+   
+}
+.inforuta {
+    z-index: 50; 
+    position: absolute;
+    width: 300px; 
+    background-color: #C2C2D6; 
+    padding: 10px; 
+}
+.inforuta > a {
+    text-decoration: underline; 
+}
+.inforuta > a:hover{
+    font-weight: bold; 
+}
+#imgmapStudentrepr {
+    top: 220px; 
+    left: 78px; 
+    width: 210px; 
+    height: 38px; 
+}
+#Studentreprpopup {
+    display: none; 
+}
+
+#imgmapFum {
+    top: 200px; 
+    left: 330px; 
+    width: 150px; 
+    height: 80px; 
+}
+#Fumpopup {
+    display: none; 
+}
+#imgmapRad {
+    top: 325px; 
+    left: 100px; 
+    width: 160px; 
+    height: 85px; 
+}
+#radpopup {
+    display: none; 
+}
+#imgmapKS {
+
+    top: 318px; 
+    left: 300px; 
+    width: 210px; 
+    height: 100px; 
+}
+#KSpopup {
+    display: none; 
+}
+#imgmapSektioner {
+    top: 305px; 
+    left: 540px; 
+    width: 180px; 
+    height: 120px; 
+}
+#sektionerpopup {
+    display: none; 
+}
+#imgmapProjekt {
+    top: 470px; 
+    left: 172px; 
+    width: 130px; 
+    height: 65px; 
+}
+#projektpopup {
+    display: none; 
+}
+#imgmapArvoderade {
+    top: 470px; 
+    left: 340px; 
+    width: 130px; 
+    height: 65px; 
+}
+#arvoderadepopup {
+    display: none; 
+}
+#imgmapTjansteman {
+    top: 470px; 
+    left: 510px; 
+    width: 140px; 
+    height: 65px; 
+}
+#tjanstemanpopup {
+    display: none; 
+}
+#imgmapLosnummer {
+    top: 465px; 
+    left: 660px; 
+    width: 192px; 
+    height: 190px; 
+}
+#losnummerpopup {
+    display: none; 
+}
 
 
-.backdrop {
+
+/*.backdrop {
     position: fixed; 
     top: 0px; 
     left: 0px; 
@@ -283,7 +410,7 @@ footer {
     float: right; 
     margin-right: 6px; 
     cursor: pointer; 
-}
+}*/
 
 /* Standardgrejer nedanför, inget jag har gjort, följde med från template 
 -------------------------------------------------------------------------*/

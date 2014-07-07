@@ -35,68 +35,21 @@
         }(document, 'script', 'facebook-jssdk'));</script>
     <div id="headerbackground">
     </div>
-    @if (ViewBag.Type != "Sektion")
-    {
+    
         <div id="navbackground">
         </div>
-    }
-
+    
     <div id="site">
         <header>
             <a href="~/Home/Index">
                 <img id="headerpic" src="~/Content/Grafik/header.gif" />
             </a>
-            @if (ViewBag.SubTitle == "Corax")
-            {
-                <img src="~/Content/Sektioner/corax.png" />
-            }
-            @if (ViewBag.SubTitle == "DokSek")
-            {
-                <img style="margin-top: 60px;" src="~/Content/Sektioner/doksek.png" />
-            }
-            @if (ViewBag.SubTitle == "Musik")
-            {
-                <img style="margin-top: 30px; " src="~/Content/Sektioner/musik.png" />
-            }
-            @if (ViewBag.SubTitle == "Serum")
-            {
-                <img src="~/Content/Sektioner/serum.png" />
-            }
-            @if (ViewBag.SubTitle == "Sesam")
-            {
-                <img style="margin-top: 50px;" src="~/Content/Sektioner/sesam.png" />
-            }
-            @if (ViewBag.SubTitle == "Sobra")
-            {
-                <img style="margin-top: 20px" src="~/Content/Sektioner/sobra.png" />
-            }
-            @if (ViewBag.SubTitle == "GIH")
-            {
-                <img style="margin-top: 20px;" src="~/Content/Sektioner/gih.png" />
-            }
-            @if (ViewBag.SubTitle == "Grythyttan")
-            {
-                <img src="~/Content/Sektioner/grythyttan.png" />
-            }
-            @if (ViewBag.SubTitle == "Teknat")
-            {
-                <img style="margin-top: 60px;" src="~/Content/Sektioner/teknat.png" />
-            }
+          
             <a id="blimedlem" href="https://medlem.orebrostudentkar.se/">
             </a>
         </header>
-        @if (ViewBag.Type == "Sektion")
-        {
-            <p>
-                <a href="~/Home/Index">
-                    <img src="~/Content/Grafik/pil.png" />Tillbaks till Örebro Studentkårs huvudsida
-                </a>
-            </p>
-        }
-        else
-        {
-            @RenderPage("Navigation.cshtml")
-        }
+        @RenderPage("Navigation.cshtml")
+       
 
         <div>
             @RenderBody()
@@ -124,7 +77,7 @@
                 Fakultetsgatan 3 <br />
                 702 81 Örebro
             </div>
-            <div id="postadress">
+            <div id="social">
                 <a href="https://www.facebook.com/orebrostudentkar">
                     <img src="~/Content/Grafik/facebook.png" />
                 </a>

@@ -52,5 +52,9 @@ namespace OrebroStudentkar2.Controllers
         {
             return View(); 
         }
+        public ActionResult GronaStudenter()
+        {
+            return View();
+        }
     }
 }

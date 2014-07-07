@@ -141,6 +141,11 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\Bilder\Introduktionen\intro1.jpg" />
+    <Content Include="Content\Bilder\Introduktionen\intro2.jpg" />
+    <Content Include="Content\Bilder\Introduktionen\intro3.jpg" />
+    <Content Include="Content\Bilder\Introduktionen\intro4.jpg" />
+    <Content Include="Content\Bilder\Introduktionen\intro5.jpg" />
     <Content Include="Content\Bilder\Kontakt\albina_300px.jpg" />
     <Content Include="Content\Bilder\Kontakt\andreas_300px.jpg" />
     <Content Include="Content\Bilder\Kontakt\matilde_300px.jpg" />
@@ -343,6 +348,7 @@
     <Content Include="Views\Forening\Foreningslista.cshtml" />
     <Content Include="Views\Forening\JF.cshtml" />
     <Content Include="Views\Om\Roller.cshtml" />
+    <Content Include="Views\Forening\GronaStudenter.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
