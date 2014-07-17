@@ -1,0 +1,290 @@
+﻿* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Muli', sans-serif;
+    font-size: 0.8em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Kreon', serif;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2.5em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+h4 {
+    font-size: 1.8em;
+}
+
+h5 {
+    font-size: 1.4em;
+}
+
+dt {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+dd {
+    margin-left: 1em;
+}
+
+img {
+    max-width: 100%;
+}
+li {
+    padding: 0.5em;
+}
+
+td {
+    padding: 0.3em;
+    display: block;
+}
+
+tr td:first-child {
+    background-color: #BABABA;
+}
+
+.hide {
+    display: none;
+}
+
+.leftcolumn,
+.rightcolumn,
+.importantrightcolumn,
+#indexrightcolumn,
+footer,
+.bigleftcolumn,
+.importantinfo,
+#instagramsmall,
+.kontakter {
+    padding: 5%;
+}
+
+#social > a,
+.menylvl2 > a,
+.menylvl1,
+#headerinner > a,
+#toplinks > a {
+    text-decoration: none;
+}
+
+/**Top section of page**/
+header {
+    height: 80px;
+    background-image: url(/Images/Grafik/headerdelsmall.png);
+}
+
+#toplinks > a {
+    text-decoration: none;
+    float: left;
+    padding-top: 0.6em;
+    padding-bottom: 0.6em;
+    margin-left: 5%;
+}
+
+#smallcontact {
+    max-width: 35%;
+    margin-left: 5%;
+    margin-top: 2%;
+    float: left;
+    font-size: 0.8em;
+}
+
+#blimedlem {
+    float: right;
+    position: relative;
+    z-index: 5;
+}
+
+#homebutton {
+    float: left;
+    z-index: 3;
+    position: absolute;
+}
+
+#headerpic {
+    display: none;
+}
+
+#headerpicmobile {
+    display: inline-block;
+    position: absolute;
+    margin-left: 5%;
+}
+
+#blimedlemstor {
+    display: none;
+}
+
+#blimedlemliten {
+    display: inline-block;
+}
+
+/**Contentsection**/
+#container {
+    background-image: url(/Images/Grafik/bg.png);
+    background-repeat: repeat;
+    clear: both;
+    position: relative;
+}
+
+.breadcrumb {
+    display: none;
+}
+
+.nyhetssignaturtop {
+    font-size: 1em;
+    font-style: italic;
+    color: grey;
+}
+
+.importantrightcolumn {
+    display: none;
+}
+
+#indexrightcolumn {
+    display: none;
+}
+
+#organisationskartastor {
+    display: none;
+}
+/**Bottom section**/
+footer {
+    background-color: #339933;
+}
+
+#kansliöppettider {
+    display: none;
+}
+
+#kontaktuppgifter {
+    display: none;
+}
+#social {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+    #social > * {
+        display: inline-block;
+    }
+
+    #social > div {
+        margin-bottom: 0.5em;
+    }
+
+
+/**Navigation**/
+#menycontainer {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.3em;
+}
+
+label {
+    cursor: pointer;
+}
+
+.arrowdown {
+    display: none;
+}
+
+#menycontainer {
+    clear: both;
+    border-top: 1px solid grey;
+    border-right: 1px solid grey;
+    border-left: 1px solid grey;
+}
+
+.arrow {
+    position: absolute;
+    left: 10em;
+    z-index: 2;
+    top: 0.9em;
+}
+
+.menylabelcontainer {
+    position: relative;
+    background-color: black;
+}
+
+.menylvl1 {
+    display: block;
+    padding: 3%;
+    border-bottom: 1px solid grey;
+    border-right: 1px solid grey;
+    position: relative;
+    z-index: 3;
+    color: white;
+}
+
+    .menylvl1:active {
+        background-color: grey;
+    }
+    .menylvl1:last-child {
+        display: none;
+    }
+
+/*Menynivå 2*/
+.menylvl2 > a {
+    display: block;
+    color: white;
+    width: 100%;
+    background-color: #191919;
+    padding: 0.6em 0.6em 0.6em 2em;
+    font-size: 0.9em;
+}
+
+    .menylvl2 > a:active {
+        background-color: grey;
+    }
+
+
+/**Själva klickeffekten**/
+/*Kårsektioner*/
+#menu-toggle-sektioner:checked ~ #menysektioner {
+    display: block;
+}
+
+/*Om Oss*/
+#menu-toggle-omoss:checked ~ #menyomoss {
+    display: block;
+}
+
+/*Ny student*/
+#menu-toggle-nystudent:checked ~ #menynystudent {
+    display: block;
+}
+
+/*Studentliv*/
+#menu-toggle-studentliv:checked ~ #menystudentliv {
+    display: block;
+}
+
+/*Dina rättigheter*/
+#menu-toggle-rattigheter:checked ~ #menyrattigheter {
+    display: block;
+}
+
+@media (max-width: 17em) {
+    #smallcontact {
+        display: none;
+    }
+}

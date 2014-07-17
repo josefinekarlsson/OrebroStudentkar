@@ -1,0 +1,188 @@
+<?php
+
+//
+// This is the MODEL section:
+//
+
+include 'php-ofc-library/open-flash-chart.php';
+
+$mdb_host  = "130.243.117.20";
+//$mdb_host = "130.243.97.105";
+$mdb_user  = "fria";
+$mdb_pass  = "valet";
+$mdb_name  = "fumval";
+
+//colors
+$colval7 = "#404040";
+$colval8 = "#860000";
+$colval9 = "#027d35";
+$colaxis = "#909090";
+$colbg   = "#ffffff";
+$colgrid = "#c0c0c0";
+
+$mcon = mysql_connect($mdb_host,$mdb_user,$mdb_pass) or die ("Fick inte kontakt med SQL-servern för valadministration.");
+mysql_select_db($mdb_name,$mcon) or die ("Hittade inte rätt databas för valet på torget");
+
+$votes = array();
+$LYvotes = array(217,316,232,141,70,167,145,11,56,57,48);
+//$LYvotes = array(87,168,121,62,31,86,65,0,6,25,14);
+$L7votes = array(87,168,121,62,31,86,65,0,6,25,14);
+//$L7votes = array(52,52,67,48,20,25,15,0,3,5,14);
+$grhData3 = "";
+$andelvotes = 0;
+
+//resultat
+
+  //per sektion
+  $getsektionersql = 'select distinct s.sektionsnamn,c.cid,c.name,s.sid '.
+                     'from sektioner s, candidates c '.
+                     'where s.sid=c.sid order by s.mandat desc, s.sunioncode;';
+  $resulta = mysql_query($getsektionersql,$mcon)or die('Kunde inte hämta sektioner.');
+  $j=-1;
+  while ($row = mysql_fetch_array($resulta)){
+    //per sektion
+    if ($row['sektionsnamn']!=$sektion){
+      $i=0;$j++;
+    }
+    if ($i == 0){
+      $gettotalu  = "select distinct count(personno) as count ".
+                    "from voters where ".
+                    "sid='".$row['sid']."';";
+      $result = mysql_query($gettotalu,$mcon) or die ('Kunde inte hämta totalt antal röster för sektion');
+      $rown = mysql_fetch_array($result);
+
+      $votes[] = (int)$rown['count'];
+      $andelvotes = $andelvotes + (int)$rown['count'];
+      $grhData3 = $grhData3.$row['sektionsnamn'].'|';
+
+      $sektion = $row['sektionsnamn'];
+      $andelrost = $andelrost+$rown['count'];
+      $i++;
+    }
+  }
+  mysql_free_result($resulta);
+    
+  $andelvotes = 100*($andelvotes/7700);
+
+  $title = new title("FUM-val 10/11");
+  $title->set_style( "{font-size: 32px; font-family: Verdana; font-weight: bold; color: #000000; text-align: center;}" );
+
+  $bar1 = new bar_3d();
+  $bar1->set_key( 'FUM-val 10/11', 12 );
+  $bar1->set_values($votes);
+  $bar1->colour = $colval9;
+
+  $bar2 = new bar_3d();
+  $bar2->set_key( 'FUM-val 09/10', 12 );
+  $bar2->set_values($LYvotes);
+  $bar2->colour = $colval8;
+
+  $bar3 = new bar_3d();
+  $bar3->set_key( 'FUM-val 08/09', 12 );
+  $bar3->set_values($L7votes);
+  $bar3->colour = $colval7;
+
+  $x_axis = new x_axis();
+  $x_axis->set_3d(15);
+  $x_axis->colour = $colaxis;
+  $x_axis->set_grid_colour($colgrid);
+  $x_axis->set_labels_from_array( array('Sesam','Sobra','Serum','Kulinfo','Lupp','Teknat','Samvetet','Doksek','Musik','GIH','Grythyttan') );
+
+  $y_axis = new y_axis();
+  $y_axis->colour = $colaxis;
+  $y_axis->set_grid_colour($colgrid);
+  $y_axis->set_range(0, 320, 50);
+
+  $chart = new open_flash_chart();
+  $chart->bg_colour = $colbg;
+  $chart->set_title( $title );
+  $chart->add_element( $bar1 );
+  $chart->add_element( $bar2 );
+  $chart->add_element( $bar3 );
+  $chart->set_x_axis( $x_axis );
+  $chart->set_y_axis( $y_axis );
+
+//
+// This is the VIEW section:
+//
+?>
+
+<html>
+<head>
+<!-- 
+<meta HTTP-EQUIV="refresh" CONTENT="30" />
+-->
+</head>
+<body>
+<center>
+
+<script type="text/javascript" src="js/json/json2.js"></script>
+<script type="text/javascript" src="js/swfobject.js"></script>
+
+<script type="text/javascript">
+swfobject.embedSWF("open-flash-chart.swf", "Valsektioner", "800", "400", "9.0.0");
+</script> 
+
+<script type="text/javascript">
+
+function ofc_ready()
+{
+    //alert('ofc_ready');
+}
+
+function open_flash_chart_data()
+{
+    //alert( 'reading data' );
+    return JSON.stringify(valdata);
+}
+
+function findSWF(movieName) {
+  if (navigator.appName.indexOf("Microsoft")!= -1) {
+    return window[movieName];
+  } else {
+    return document[movieName];
+  }
+}
+var valdata = <?php echo $chart->toPrettyString(); ?>;
+</script>
+
+<div id="valet">
+
+ <!-- 
+  <object style="visibility: visible;" id="Valsektioner" data="open-flash-chart.swf" type="application/x-shockwave-flash" height="400" width="777"></object>
+ -->
+ <div id="Valsektioner" style=""></div>
+
+ <!--
+ <div id="ruta" style="">
+  <table>
+   <tr>
+    <td style="background-color:<?=$colval8;?>;">&nbsp;&nbsp;</td><td>FUM-val 08/09</td>
+   </tr>
+   <tr>
+    <td style="background-color:<?=$colval9;?>">&nbsp;&nbsp;</td><td>FUM-val 09/10</td>
+   </tr>
+  </table>
+ </div>
+ -->
+</div>
+<div id="Valdeltagande">
+<!-- <p><big>Valet &auml;r avslutat! Ett stort tack till alla som deltagit!</big></p> -->
+<?
+echo '';
+echo '<img src="http://chart.apis.google.com/chart?'.
+          'chs=750x220'.
+     '&amp;cht=gom'.
+     '&amp;&amp;chco=860000,860000,860000,027d35,027d35'.
+     '&amp;chd=t:'.$andelvotes.
+     '&amp;chds=0,18.54'.
+     //'&amp;chl='.sprintf("%01.2f", $andelvotes).'%'.
+     '" alt="Valdeltagande i procent" />';
+echo '<p><big>Andel r&ouml;stande studenter 09/10:&nbsp;'.sprintf("%01.2f", $andelvotes).'%</big><br>';
+echo 'Slutresultat f&ouml;r FUM-valet 08/09 blev 9.27%</p>';
+
+?>
+</div>
+</center>
+</body>
+</html>

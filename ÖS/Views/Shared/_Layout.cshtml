@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+@using System.Web.Optimization
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    @if (ViewBag.SubTitle != null)
+    {
+        <title>@ViewBag.SubTitle</title>
+    }
+    else
+    {
+        <title>@ViewBag.Title</title>
+    }
+    <link href="~/CSS/small.css" rel="stylesheet" />
+    <link href="~/CSS/medium.css" rel="stylesheet" />
+    <link href="~/CSS/large.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-1.11.1.min.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Kreon' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <!--Facebook like button, according to https://developers.facebook.com/docs/plugins/like-button -->
+    @*<div id="fb-root"></div>*@
+    <script>
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+
+    <div id="site">
+        <header>
+            <div id="headerinner">
+                <a id="homebutton" href="~/Home/Index">
+                    <img id="headerpic" src="~/Images/Grafik/header.png" />
+                </a>
+
+                <img id="headerpicmobile" src="~/Images/Grafik/headerpicmobile.png" />
+
+                <a id="blimedlem" href="https://medlem.orebrostudentkar.se/">
+                    <img id="blimedlemstor" src="~/Images/Grafik/blimedlem.png" />
+                    <img id="blimedlemliten" src="~/Images/Grafik/blimedlemsmall.png" />
+                </a>
+            </div>
+        </header>
+        <div id="topcontainer">
+            <div id="toplinks">
+                <a href="~/Home/Index">
+                    <img class="toplinkimg" src="~/Images/Grafik/homeicon.png" />
+                </a>
+                <a href="~/Home/KontaktaOss">
+                    <img class="toplinkimg" src="~/Images/Grafik/contacticon.png" />
+                </a>
+                <a href="~/Home/Kalender">
+                    <img class="toplinkimg" src="~/Images/Grafik/calendaricon.png" />
+                </a>
+            </div>
+            <div id="smallcontact">
+                Kansliet har just nu sommarstängt och öppnar åter den 25 augusti.
+            </div>
+        </div>
+        @RenderPage("Navigation.cshtml")
+
+        <div id="container">
+            @RenderBody()
+            <div style="clear:both;"></div>
+        </div>
+
+        <footer>
+            <div id="footerContent">
+                <div id="kontaktuppgifter">
+                    Telefon: 019 – 676 23 50 <br />
+                    E-mail: kansli@orebrostudentkar.se <br />
+                    Kansliet öppnar åter den 25 augusti.
+                </div>
+                <div id="kansliöppettider">
+                    Post- och besöksadress:<br />
+                    Örebro studentkår <br />
+                    Fakultetsgatan 3 <br />
+                    702 81 Örebro
+                </div>
+                <div id="social">
+                    <a href="https://www.facebook.com/orebrostudentkar">
+                        <img src="~/Images/Grafik/facebook.png" />
+                    </a>
+                    <a href="http://instagram.com/orebrostudentkar">
+                        <img src="~/Images/Grafik/insta.png" />
+                    </a>
+
+                    @*<div class="fb-like" data-href="https://www.facebook.com/orebrostudentkar"
+                        data-width="500" data-layout="button" data-action="like"
+                        data-show-faces="false" data-share="false"></div>*@
+                </div>
+            </div>
+            <div style="clear: both;"></div>
+        </footer>
+    </div>
+</body>
+</html>

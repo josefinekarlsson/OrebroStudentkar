@@ -1,0 +1,38 @@
+Fonts actively used in this project
+-----------------------------------
+
+
+Font name       :   Effra W02 Regular
+Font provider   :   fonts.com
+
+******************************************************************************
+
+Font name       :   Effra W02 Light
+Font provider   :   fonts.com
+
+******************************************************************************
+
+Font name       :   Effra W02 Bold
+Font provider   :   fonts.com
+
+******************************************************************************
+
+Font name       :   Georgia
+Font provider   :   system
+Font weight     :   600
+Font style      :   normal
+
+******************************************************************************
+
+Font name       :   Georgia
+Font provider   :   system
+Font weight     :   400
+Font style      :   normal
+
+******************************************************************************
+
+
+
+
+
+Created by Typecast on 2013/07/04.

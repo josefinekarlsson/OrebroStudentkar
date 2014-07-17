@@ -1,0 +1,253 @@
+﻿@media (min-width: 57.01em) {
+
+    .clears {
+        display: none;
+    }
+
+        .clears:last-child {
+            display: block;
+        }
+    /**Top section**/
+    #headerinner {
+        width: 900px;
+        margin: auto;
+    }
+    /**Content section**/
+    #container {
+        width: 900px;
+        margin: auto;
+    }
+
+    #indexrightcolumn {
+        width: 30%;
+        float: right;
+        padding-left: 0;
+    }
+
+    .leftcolumn {
+        width: 70%;
+        float: left;
+    }
+
+    .rightcolumn {
+        padding-left: 0;
+        width: 30%;
+        float: right;
+        display: block; 
+    }
+    .importantinfo {
+        display: none;
+    }
+    .importantrightcolumn {
+        display: block; 
+        padding-left: 0;
+        width: 30%;
+        float: right;
+    }
+    #organisationskartaliten {
+        display: none;
+    }
+    .kontaktgrupp {
+        clear: both; 
+    }
+    .kontakt {
+        width: 50%;
+        float: left;  
+        padding-right: 5%; 
+        padding-bottom: 5%; 
+    }
+    #myinfo {
+        clear: both; 
+        font-size: 0.8em; 
+        padding-top: 5%; 
+    }
+
+
+    /**Bottom content**/
+    #footerContent {
+        width: 65%;
+        margin: auto;
+    }
+
+    #kansliöppettider {
+        float: left;
+        margin-right: 5%;
+    }
+    /**Navigation**/
+    .menylabelcontainer {
+        display: inline-block;   
+        width: 150px; 
+        position: static; 
+    }
+    .menylvl1 {
+        padding: 1.2em 1.2em;
+        border-bottom: none;
+        display: inline-block;
+        position: static; 
+        border-left: none;
+        border-right: none;
+        background-image: url(/Images/Grafik/arrowside.png);
+        background-repeat: no-repeat;
+        background-position: right 40px center;
+        width: 110%; 
+    }
+        #menycontainer {
+        background: black;
+        height: 100%;
+        width: 100%; 
+    }
+    .menylvl1:last-child {
+        clear: both; 
+
+    }
+    #menyinnercontainer {
+        width: 900px;
+        margin: auto;
+
+    }
+    .menylvl2 {
+        position: absolute;
+        z-index: 100; 
+    }
+    #omoss {
+        width: 120px; 
+    }
+    #rattigheter {
+        width: 170px; 
+    }
+    .clears {
+        display: none; 
+    }
+    /**Organisationskarta**/
+    #organisationslista {
+        display: none;
+    }
+
+    #organisationskartajs {
+        width: 810px;
+        height: 556px;
+        background-image: url(/Images/Grafik/organisationskarta.png);
+        position: relative;
+    }
+
+    .clickarea {
+        position: absolute;
+        z-index: 3;
+    }
+
+    .inforuta {
+        z-index: 4;
+        position: absolute;
+        width: 300px;
+        background-color: #C2C2D6;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+        .inforuta > a {
+            text-decoration: underline;
+        }
+
+            .inforuta > a:hover {
+                font-weight: bold;
+            }
+
+    #imgmapStudentrepr {
+        top: 160px;
+        left: 78px;
+        width: 210px;
+        height: 38px;
+    }
+
+    #Studentreprpopup {
+        display: none;
+    }
+
+    #imgmapFum {
+        top: 150px;
+        left: 270px;
+        width: 150px;
+        height: 80px;
+    }
+
+    #Fumpopup {
+        display: none;
+    }
+
+    #imgmapRad {
+        top: 245px;
+        left: 100px;
+        width: 160px;
+        height: 85px;
+    }
+
+    #radpopup {
+        display: none;
+    }
+
+    #imgmapKS {
+        top: 240px;
+        left: 250px;
+        width: 210px;
+        height: 100px;
+    }
+
+    #KSpopup {
+        display: none;
+    }
+
+    #imgmapSektioner {
+        top: 220px;
+        left: 440px;
+        width: 180px;
+        height: 120px;
+    }
+
+    #sektionerpopup {
+        display: none;
+    }
+
+    #imgmapProjekt {
+        top: 360px;
+        left: 152px;
+        width: 130px;
+        height: 65px;
+    }
+
+    #projektpopup {
+        display: none;
+    }
+
+    #imgmapArvoderade {
+        top: 360px;
+        left: 280px;
+        width: 130px;
+        height: 65px;
+    }
+
+    #arvoderadepopup {
+        display: none;
+    }
+
+    #imgmapTjansteman {
+        top: 360px;
+        left: 410px;
+        width: 140px;
+        height: 65px;
+    }
+
+    #tjanstemanpopup {
+        display: none;
+    }
+
+    #imgmapLosnummer {
+        top: 345px;
+        left: 530px;
+        width: 192px;
+        height: 190px;
+    }
+
+    #losnummerpopup {
+        display: none;
+    }
+}

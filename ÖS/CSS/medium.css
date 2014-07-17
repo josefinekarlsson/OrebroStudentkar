@@ -1,0 +1,112 @@
+﻿@media (min-width: 36.01em) {
+    td {
+        padding: 1em; 
+        border-bottom: 1px solid grey; 
+    }
+
+    /**Top section**/
+    header {
+        height: 133px;
+        background-image: url(/Images/Grafik/headerdel.png);
+        margin-bottom: 4em;
+    }
+    #blimedlemliten {
+        display: none;
+    }
+    #blimedlemstor {
+        display: block; 
+    }
+    #headerpicmobile {
+        display: none;
+    }
+    #headerpic {
+        display: block; 
+    }
+    #blimedlemstor {
+        float: right;
+    }
+
+    #topcontainer {
+        display: none;
+    }
+
+    /**^Content section**/
+    #instagramsmall {
+        display: none;
+    }
+    #indexrightcolumn{
+        display: block; 
+    }
+     
+     .breadcrumb {
+        display: block;
+        padding-left: 5%;
+        padding-top: 5%;
+        clear: both;
+    }
+    
+     #organisationskartajs {
+        display: none; 
+    }
+    /**Footer**/
+    #kontaktuppgifter {
+        display: block; 
+        float: left;
+        margin-right: 4%;
+    }
+    #kansliöppettider {
+        float: left;
+        display: block; 
+        
+    }
+    #social {
+        float: right;
+        width: 25%; 
+        padding: 0; 
+    }
+  /**Navigation**/
+    .clears {
+        clear: none; 
+    }
+    .menylvl1:hover {
+        background-color: grey;
+    }
+
+    .menylvl2 > a:hover {
+        background-color: grey;
+    }
+
+    .menylvl2 > a {
+        padding: 1em;
+    }
+
+    .arrow {
+        display: none;
+    }
+    
+    .menylvl1 {
+        padding: 5%;
+        background-image: url(/Images/Grafik/arrowside.png);  
+        background-repeat: no-repeat; 
+        background-position: center; 
+    }
+    .menylvl1:last-child {
+        background-image: none; 
+        display: block; 
+
+    }
+    .menylabelcontainer {
+        position: static;
+        width: 50%;
+        float: left;
+    }
+
+    .menylvl2 {
+        position: static;
+        z-index: 10;
+    }
+    .menylvl2 > a {
+        padding-left: 2em;
+        padding-bottom: 0.5em;  
+    }
+}

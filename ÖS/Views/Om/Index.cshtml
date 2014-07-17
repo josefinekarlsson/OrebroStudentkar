@@ -1,0 +1,122 @@
+﻿@{
+    ViewBag.Title = "Om oss";
+}
+
+<div class="breadcrumb">
+    <a href="~/Home/Index">Hem</a> > Om oss
+</div>
+<div class="bigleftcolumn">
+    <h1>
+        Om Örebro Studentkår
+    </h1>
+    <p>
+        Örebro studentkår företräder dig som student och doktorand vid Örebro universitet.
+        Hit kan du vända dig om du har frågor och funderingar kring din studiesituation,
+        studentlivet eller problem med din utbildning. Örebro studentkår är en partipolitiskt,
+        fackligt och religiöst obunden organisation som driver studenternas intressen i rad
+        olika frågor. Örebro studentkår vill trygga din utbildning, din hälsa och se
+        till att du har en riktigt bra studietid.
+    </p>
+    <img id="organisationskartaliten" src="~/Images/Grafik/organisationskartasmall.png" />
+    <div id="organisationskartajs">
+
+        <ul id="imgmapStudentrepr" class="clickarea">
+            <li id="Studentreprpopup" class="inforuta">
+                Studenter har rätt att vara med och fatta beslut kring sin utbildning. Därför finns det studentrepresentantplatser i
+                flera olika råd och nämnder på Örebro Universitet. <a href="/Om/Studentrepresentanter">Läs mer -></a>
+            </li>
+        </ul>
+        <ul id="imgmapFum" class="clickarea">
+            <li id="Fumpopup" class="inforuta">
+                Fullmäktige är det högst beslutande organet inom Örebro studentkår och består av 41
+                ledamöter som representerar sin kårsektion. Fullmäktige sammanträder fyra gånger per år och beslutar
+                vilken riktning Örebro studentkår ska arbeta mot. <a href="/Om/FUM">Läs mer -></a>
+            </li>
+        </ul>
+
+        <ul id="imgmapKS" class="clickarea">
+            <li id="KSpopup" class="inforuta">
+                Kårstyrelsen är studentkårens verkställande organ och direkt underställd Fullmäktige. Kårstyrelsen består av nio ledamöter,
+                en för varje kårsektion, samt ordförande och vice ordförande. <a href="/Om/KS">Läs mer -></a>
+            </li>
+        </ul>
+
+        <ul id="imgmapRad" class="clickarea">
+            <li id="radpopup" class="inforuta">
+                Underställd kårstyrelsen har ÖS en mängd råd i vilka inom ÖS engagerade medlemmar träffas. Dessa råd är av olika karaktär.
+                Några av råden är bland annat utbildningsbevakarrådet, i vilket alla kårsektioners utbildningsbevakare träffas, UniSex, inom vilket
+                alla kårsektioners sexmästare träffas, samt kassörrådet, inom vilket alla kårsektioners kassörer träffas.
+            </li>
+        </ul>
+        <ul id="imgmapProjekt" class="clickarea">
+            <li id="projektpopup" class="inforuta">
+                ÖS driver en del projekt under ett verksamhetsår. Ett återkommande projekt är akutboendet, som hjälper nya studenter att få en
+                en tillfällig sovplats tills de hittar ett permanent boende.
+            </li>
+        </ul>
+
+        <ul id="imgmapArvoderade" class="clickarea">
+            <li id="arvoderadepopup" class="inforuta">
+                På ÖS kansli är tre personer heltidsarvoderade: ÖS ordförande, ÖS vice ordförande och ÖS studiesocialt ansvarige.
+                Att en person är arvoderad innebär att personen får en fast ersättning för att utföra sitt uppdrag.
+                <a href="/Om/Roller">Här</a> kan du läsa mer om vad de arvoderades uppgifter är.
+            </li>
+        </ul>
+        <ul id="imgmapTjansteman" class="clickarea">
+            <li id="tjanstemanpopup" class="inforuta">
+                På ÖS centralt arbetar tre tjänstemän, en informatör och ett student- och doktorandombud (kallas kort studentombudet)
+                på heltid samt en ekonom på 50 %. Läs mer om dessa roller <a href="/Om/Roller">här</a>
+            </li>
+        </ul>
+        <ul id="imgmapSektioner" class="clickarea">
+            <li id="sektionerpopup" class="inforuta">
+                Kårsektionerna delar in studenter efter ämnesområden och det finns nio kårsektioner inom Örebro studentkår. Dessa är studentkårens
+                operativa del och arbetar närmast studenterna. Det är till din studentsektion som sköter bland annat utbildningsbevakning
+                och anordnar den lokala introduktionen. <a href="/Sektion/Index">Läs mer -> </a>
+            </li>
+        </ul>
+
+        <ul id="imgmapLosnummer" class="clickarea">
+            <li id="losnummerpopup" class="inforuta">
+                Lösnummer är ÖS tidning. Lösnummers uppdrag är att granska Örebro universitet, ÖS och att rapportera om sådant som kan
+                vara av intresse för studenterna. <a href="/Studentliv/Losnummer">Här</a> kan du läsa mer om Lösnummer.'
+            </li>
+        </ul>
+    </div>
+    <div id="organisationslista">
+        @RenderPage("Organisationslista.cshtml")
+    </div>
+    <noscript>
+        @RenderPage("Organisationslista.cshtml")
+    </noscript>
+
+    <h2>Vill du veta mer? Läs våra styrdokument!</h2>
+    <p>
+        <a href="~/Content/Styrdokument/Asiktsdokument.pdf">
+            <img src="~/Images/Grafik/pdficon.png" />Åsiktsdokument
+        </a><br />
+        ÖS Fullmäktige beslutar vart annat år om ÖS åsiktsdokument. Åsiktsdokumentet förklarar vad ÖS tycker i
+        olika frågor både lokalt och nationellt.
+    </p>
+    <p>
+        <a href="~/Content/Styrdokument/Visionsdokument.pdf">
+            <img src="~/Images/Grafik/pdficon.png" />Visionsdokument
+        </a><br />
+        ÖS Fullmäktige beslutar vart tredje år om ÖS vision. Visionen tas i samband med att ÖS söker
+        kårstatus hos Örebro universitet. ÖS vision beskriver enkelt vilka mål ÖS arbete ska sträva mot.
+    </p>
+    <p>
+        <a href="~/Content/Styrdokument/Verksamhetsplan.pdf">
+            <img src="~/Images/Grafik/pdficon.png" />Verksamhetsplan
+        </a><br />
+        ÖS Verksamhetsplan berättar hur visioner och mål ska uppnås under året.
+    </p>
+    <p>
+        <a href="~/Content/Styrdokument/Stadga.pdf">
+            <img src="~/Images/Grafik/pdficon.png" />Stadga
+        </a><br />
+        ÖS stadgar trädde i kraft 1997 och har sedan dess reviderats ett antal gånger. Stadgarna fungerar som ryggraden i organisationen
+        och är det ramverk organisationen förhåller sig till.
+    </p>
+</div>
+<script src="~/Scripts/mylightbox.js"></script>

@@ -1,0 +1,12 @@
+<IfModule mod_security.c>
+SecFilterInheritance Off
+	<Files async-upload.php>
+		SecFilterEngine Off
+		SecFilterScanPOST Off
+	</Files>
+</IfModule>
+
+#AddType x-mapp-php5 .php
+#AddHandler x-mapp-php5 .php
+
+ErrorDocument 404 /404.html

@@ -1,0 +1,8 @@
+<IfModule mod_security.c>
+SecFilterInheritance Off
+	<Files async-upload.php>
+		SecFilterEngine Off
+		SecFilterScanPOST Off
+	</Files>
+</IfModule>
+
