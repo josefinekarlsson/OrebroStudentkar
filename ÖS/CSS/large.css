@@ -44,9 +44,7 @@
         width: 30%;
         float: right;
     }
-    #organisationskartaliten {
-        display: none;
-    }
+    
     .kontaktgrupp {
         clear: both; 
     }
@@ -65,7 +63,7 @@
 
     /**Bottom content**/
     #footerContent {
-        width: 65%;
+        width: 900px;
         margin: auto;
     }
 
@@ -100,6 +98,9 @@
         clear: both; 
 
     }
+    .menylabelcontainer:hover > .menylvl2 {
+        display: block; 
+    }
     #menyinnercontainer {
         width: 900px;
         margin: auto;
@@ -118,7 +119,11 @@
     .clears {
         display: none; 
     }
+    
     /**Organisationskarta**/
+    #organisationskartaliten {
+        display: none;
+    }
     #organisationslista {
         display: none;
     }
@@ -128,17 +133,19 @@
         height: 556px;
         background-image: url(/Images/Grafik/organisationskarta.png);
         position: relative;
+        display: block; 
     }
 
     .clickarea {
         position: absolute;
         z-index: 3;
+        cursor: pointer;
     }
 
     .inforuta {
-        z-index: 4;
+        z-index: 100;
         position: absolute;
-        width: 300px;
+        width: 400px;
         background-color: #C2C2D6;
         padding: 10px;
         border-radius: 10px;
@@ -153,101 +160,129 @@
             }
 
     #imgmapStudentrepr {
-        top: 160px;
-        left: 78px;
-        width: 210px;
-        height: 38px;
+        top: 165px;
+        left: 120px;
+        width: 165px;
+        height: 30px;
     }
 
     #Studentreprpopup {
         display: none;
+        width: 220px; 
+        margin-top: -80px; 
+        margin-left: -50px; 
     }
 
     #imgmapFum {
         top: 150px;
-        left: 270px;
-        width: 150px;
-        height: 80px;
+        left: 310px;
+        width: 120px;
+        height: 60px;
     }
 
     #Fumpopup {
         display: none;
+        width: 250px;
+        margin-left: -40px;
+        margin-top: -80px; 
     }
 
     #imgmapRad {
         top: 245px;
-        left: 100px;
-        width: 160px;
-        height: 85px;
+        left: 130px;
+        width: 125px;
+        height: 60px;
     }
 
     #radpopup {
         display: none;
+        width: 250px;
+        margin-left: -40px;
+        margin-top: -80px; 
     }
 
     #imgmapKS {
         top: 240px;
-        left: 250px;
-        width: 210px;
-        height: 100px;
+        left: 290px;
+        width: 160px;
+        height: 75px;
     }
 
     #KSpopup {
         display: none;
+        width: 250px;
+        margin-left: -40px;
+        margin-top: -80px; 
     }
 
     #imgmapSektioner {
-        top: 220px;
-        left: 440px;
-        width: 180px;
-        height: 120px;
+        top: 230px;
+        left: 475px;
+        width: 140px;
+        height: 90px;
     }
 
     #sektionerpopup {
         display: none;
+        width: 250px; 
+        margin-left: -40px;
+        margin-top: -80px; 
     }
 
     #imgmapProjekt {
         top: 360px;
-        left: 152px;
-        width: 130px;
-        height: 65px;
+        left: 193px;
+        width: 100px;
+        height: 50px;
     }
 
     #projektpopup {
         display: none;
+         width: 250px;
+        margin-left: -60px;
+        margin-top: -80px; 
     }
 
     #imgmapArvoderade {
         top: 360px;
-        left: 280px;
-        width: 130px;
-        height: 65px;
+        left: 323px;
+        width: 100px;
+        height: 45px;
     }
 
     #arvoderadepopup {
         display: none;
+         width: 250px;
+        margin-left: -140px;
+        margin-top: -80px; 
     }
 
     #imgmapTjansteman {
         top: 360px;
-        left: 410px;
-        width: 140px;
-        height: 65px;
+        left: 455px;
+        width: 100px;
+        height: 45px;
     }
 
     #tjanstemanpopup {
         display: none;
+         width: 250px;
+        margin-left: -140px;
+        margin-top: -80px; 
     }
 
     #imgmapLosnummer {
-        top: 345px;
-        left: 530px;
-        width: 192px;
-        height: 190px;
+        top: 350px;
+        left: 575px;
+        width: 140px;
+        height: 160px;
     }
 
     #losnummerpopup {
         display: none;
+        width: 250px; 
+        
+        margin-left: -100px;
+        margin-top: -20px; 
     }
 }

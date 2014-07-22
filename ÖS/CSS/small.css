@@ -1,7 +1,9 @@
 ﻿* {
     box-sizing: border-box;
 }
-
+a > img {
+  border:none;
+}
 body {
     margin: 0;
     padding: 0;
@@ -50,14 +52,23 @@ li {
 }
 
 td {
-    padding: 0.3em;
+    padding: 1em;
     display: block;
+    border-bottom: 1px solid grey; 
 }
 
 tr td:first-child {
     background-color: #BABABA;
 }
-
+tr td:nth-child(2) {
+    background-color: #D3D3D3; 
+}
+tr td:nth-child(3) {
+    background-color: #FFFFFF; 
+}
+tr td:nth-child(4) {
+    background-color: #FFFFFF; 
+}
 .hide {
     display: none;
 }
@@ -135,13 +146,19 @@ header {
 }
 
 /**Contentsection**/
+.foreningslogga {
+    float: right; 
+    margin-left: 1em; 
+}
 #container {
     background-image: url(/Images/Grafik/bg.png);
     background-repeat: repeat;
     clear: both;
     position: relative;
 }
-
+.importantinfo {
+        padding-bottom: 0; 
+    }
 .breadcrumb {
     display: none;
 }
